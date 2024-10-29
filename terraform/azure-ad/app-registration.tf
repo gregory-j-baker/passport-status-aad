@@ -121,7 +121,7 @@ resource "azuread_application" "passport_status" {
 resource "azuread_application_password" "passport_status" {
   application_id    = azuread_application.passport_status.id
   display_name      = "Default secret"
-  end_date_relative = "876000h"
+  end_date          = "2100-01-01T00:00:00Z"
 }
 
 resource "azuread_service_principal" "passport_status" {
